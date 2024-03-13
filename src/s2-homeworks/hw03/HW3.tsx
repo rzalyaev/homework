@@ -43,12 +43,14 @@ const HW3 = () => {
             <div className={s2.hwTitle}>Homework #3</div>
             {/*для автоматической проверки дз (не менять)*/}
 
+          <div className={s2.content}>
             <div className={s2.hw}>
-                <GreetingContainer
-                    users={users}
-                    addUserCallback={addUserCallback}
-                />
+              <GreetingContainer
+                  users={users}
+                  addUserCallback={addUserCallback}
+              />
             </div>
+          </div>
         </div>
     )
 }
