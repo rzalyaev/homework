@@ -25,6 +25,9 @@ export const pureOnBlur = (
     name: string,
     setError: React.Dispatch<React.SetStateAction<string>>
 ) => {// если имя пустое - показать ошибку
+  if (name.trim() === '') {
+    setError('Ошибка! Введите имя!');
+  }
 }
 
 export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => void) => { // если нажата кнопка Enter - добавить
