@@ -54,19 +54,21 @@ function HW2() {
       setAffairs(deleteAffair(affairs, _id));  // need to fix
     }
 
-    return (
-        <div id={'hw2'}>
-            <div className={s2.hwTitle}>Homework #2</div>
-            <div className={s2.hw}>
-                <Affairs
-                    data={filteredAffairs}
-                    setFilter={setFilter}
-                    deleteAffairCallback={deleteAffairCallback}
-                    filter={filter}
-                />
-            </div>
+  return (
+      <div id={'hw2'}>
+        <div className={s2.hwTitle}>Homework #2</div>
+        <div className={s2.content}>
+          <div className={s2.hw}>
+            <Affairs
+                data={filteredAffairs}
+                setFilter={setFilter}
+                deleteAffairCallback={deleteAffairCallback}
+                filter={filter}
+            />
+          </div>
         </div>
-    )
+      </div>
+  )
 }
 
 export default HW2
