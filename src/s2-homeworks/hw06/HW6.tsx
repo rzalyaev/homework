@@ -26,19 +26,20 @@ const HW6 = () => {
         <div id={'hw6'}>
             <div className={s2.hwTitle}>Homework #6</div>
 
-            {/*демонстрация возможностей компоненты:*/}
-            <div className={s2.hw}>
-                <div className={s.editableSpanContainer}>
-                    <SuperEditableSpan
-                        id={'hw6-spanable-input'}
-                        value={value}
-                        onChangeText={setValue}
-                        spanProps={{
-                            id: 'hw6-editable-span',
-                            defaultText: 'enter text...',
-                        }}
-                    />
-                </div>
+        {/*демонстрация возможностей компоненты:*/}
+        <div className={s2.content}>
+          <div className={s2.hw}>
+            <div className={s.editableSpanContainer}>
+              <SuperEditableSpan
+                  id={'hw6-spanable-input'}
+                  value={value}
+                  onChangeText={setValue}
+                  spanProps={{
+                    id: 'hw6-editable-span',
+                    defaultText: 'enter text...',
+                  }}
+              />
+            </div>
 
                 <div className={s.buttonsContainer}>
                     <SuperButton id={'hw6-save'} onClick={save}>
@@ -54,7 +55,8 @@ const HW6 = () => {
                 </div>
             </div>
         </div>
-    )
+      </div>
+  )
 }
 
 export default HW6
