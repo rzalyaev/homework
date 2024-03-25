@@ -1,23 +1,48 @@
-.item {
-}
-
-.item:last-of-type {
-}
-
-.users {
+.container {
+    width: 606px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
 }
 
 .buttonsContainer {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
 }
 
-.container {
+.users {
+    width: 100%;
+    border-spacing: 0;
+    font-weight: 600;
 }
 
 .thead {
+    background-color: #E5E5E5;
 }
 
-.nameCol {
+.thead td {
+    padding: 11px 17px 9px 17px;
 }
 
-.ageCol {
+.thead td, .item td {
+    padding: 16px 17px;
+}
+
+.item td {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.item:last-of-type td {
+    border: none;
+}
+
+.item .nameCol {
+    font-weight: 300;
+}
+
+.item .ageCol {
+    font-weight: 500;
 }
